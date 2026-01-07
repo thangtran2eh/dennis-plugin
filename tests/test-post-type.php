@@ -31,7 +31,7 @@ class PostTypeTest extends WP_UnitTestCase {
 	public function test_post_type_labels() {
 		$post_type = get_post_type_object( 'dennis_project' );
 
-		$this->assertEquals( 'Projects1', $post_type->labels->name );
+		$this->assertEquals( 'Projects', $post_type->labels->name );
 		$this->assertEquals( 'Project', $post_type->labels->singular_name );
 		$this->assertEquals( 'Add New Project', $post_type->labels->add_new_item );
 	}
